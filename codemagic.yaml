@@ -1,16 +1,5 @@
 workflows:
-  build:
-    name: Build Expo App
-    platform: android
-    build:
-      # Usando o EAS Build
-      eas:
-        project_path: .
-        platform: android # Ou ios, se for o caso
-    test:
-      # Adicionar etapas de teste, se necessário
-      script:
-        - echo "Rodando testes"  # Coloque os comandos de testes aqui
-    publish:
-      provider: expo
-      credentials: $EXPO_CREDENTIALS  # Definir no Codemagic (se necessário)
+    sample-workflow:
+        name: Codemagic Sample Workflow
+        max_build_duration: 120
+        instance_type: mac_mini_m2
